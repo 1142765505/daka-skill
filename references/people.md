@@ -2,11 +2,11 @@
 
 本文件只描述通用配置。每位人物的身份参考路径、裁图坐标、外貌描述、工位位置及原始照片留在本机 `references/private/`，不随开源仓库发布。
 
-执行技能前，实际读取本机 `references/private/roster.json` 和 `references/private/people.md`。不存在时说明“尚未配置个人参考库”，不能凭编号生成陌生人。401和403编号独立，分别1–10和1–3。
+执行技能前，实际读取本机 `references/private/roster.json` 和 `references/private/people.md`。不存在时说明“尚未配置个人参考库”，不能凭编号生成陌生人。401和403编号独立，分别1–10和1–4。
 
 ## 编号表格式
 
-JSON顶层键为401和403。每个房间对象含 `max_id`（10或3）和 `people` 数组。每个人对象含：
+JSON顶层键为401和403。每个房间对象含 `max_id`（10或4）和 `people` 数组。每个人对象含：
 
 - `id`：该房间内的编号；不能用照片文件序号代替。
 - `identity_source`：本机原始标注照片相对技能根目录的路径。

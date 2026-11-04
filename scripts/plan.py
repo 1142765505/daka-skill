@@ -8,7 +8,7 @@ from datetime import datetime
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-LIMITS = {"401": 10, "403": 3}
+LIMITS = {"401": 10, "403": 4}
 
 
 def ids(value, room):
