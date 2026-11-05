@@ -1,4 +1,4 @@
 interface:
   display_name: "打卡skill"
-  short_description: "按401或403的编号人物参考补人或重建指定名单场景，每次生成三张候选"
-  default_prompt: "使用 $daka-skill，401增加3、4、5；检查已有人员，只新增缺席编号，生成三张候选。"
+  short_description: "按401或403的编号人物参考补人或重建指定名单场景，每次只生成一张结果"
+  default_prompt: "使用 $daka-skill，401增加3、4、5；检查已有人员，只新增缺席编号，只生成一张结果。"

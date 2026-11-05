@@ -7,19 +7,26 @@ spec=importlib.util.spec_from_file_location("plan",Path(__file__).resolve().pare
 
 class PlanTests(unittest.TestCase):
     def test_add_one(self):
-        p=m.plan("使用打卡skill，401增加3",True,[]);self.assertEqual(p["to_add"],[3]);self.assertEqual(p["candidate_count"],3)
+        p=m.plan("使用打卡skill，401增加3",True,[]);self.assertEqual(p["to_add"],[3]);self.assertEqual(p["candidate_count"],1)
     def test_present_is_noop(self):
         p=m.plan("401增加3",True,[3]);self.assertEqual(p["state"],"noop");self.assertEqual(p["candidate_count"],0);self.assertEqual(p["skipped"],[3])
     def test_mixed_existing_preserved(self):
         p=m.plan("401增加3、4、5",True,[1,3,9]);self.assertEqual(p["to_add"],[4,5]);self.assertEqual(p["skipped"],[3]);self.assertEqual(p["final_numbered_people"],[1,3,4,5,9]);self.assertTrue(p["preserve_unrequested_existing_people"])
     def test_without_input(self):
         p=m.plan("使用打卡skill，401增加3、4、5");self.assertEqual(p["final_numbered_people"],[3,4,5]);self.assertTrue(p["forbid_other_people"])
+    def test_single_reconstruction(self):
+        for command in ["401增加全部", "403增加全部", "401增加1、4"]:
+            with self.subTest(command=command):
+                p=m.plan(command)
+                self.assertEqual(p["candidate_count"],1)
+                self.assertEqual(p["state"],"ready")
+
     def test_all_default(self):
         self.assertEqual(m.plan("使用打卡skill，增加全部")["requested"],list(range(1,11)))
     def test_403(self):
         self.assertEqual(m.plan("403增加全部")["requested"],[1,2,3,4]);self.assertEqual(m.plan("403增加1、3",True,[1])["to_add"],[3])
     def test_403_four_missing(self):
-        p=m.plan("使用打卡skill，403增加4",True,[1]);self.assertEqual(p["to_add"],[4]);self.assertEqual(p["final_numbered_people"],[1,4]);self.assertEqual(p["candidate_count"],3)
+        p=m.plan("使用打卡skill，403增加4",True,[1]);self.assertEqual(p["to_add"],[4]);self.assertEqual(p["final_numbered_people"],[1,4]);self.assertEqual(p["candidate_count"],1)
     def test_403_four_present(self):
         p=m.plan("403增加4",True,[4]);self.assertEqual(p["state"],"noop");self.assertEqual(p["skipped"],[4]);self.assertEqual(p["candidate_count"],0)
     def test_403_four_subset_without_input(self):

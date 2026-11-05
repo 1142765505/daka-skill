@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def build(root=ROOT):
     if not (root/"references/private/roster.json").is_file():
-        raise FileNotFoundError("请先按 references/people.md 配置本机私有编号表 references/private/roster.json")
+        raise FileNotFoundError("请先按 references/people.md 配置姓名编号表 references/private/roster.json")
     roster = json.loads((root/"references/private/roster.json").read_text(encoding="utf-8"))
     private = root/"references/private"
     for room, data in roster.items():
@@ -38,6 +38,12 @@ def build(root=ROOT):
                 if len(box)!=4 or not 0<=box[0]<box[2]<=1 or not 0<=box[1]<box[3]<=1: raise ValueError("无效身份裁图范围")
                 crop=im.crop(tuple(round(v*(im.width if i%2==0 else im.height)) for i,v in enumerate(box)))
                 crop.save(target/(str(person["id"])+".png"))
+            for index, ref in enumerate(person.get("identity_references", []), 1):
+                with Image.open(root/ref["source"]) as im:
+                    box = ref["box"]
+                    if len(box)!=4 or not 0<=box[0]<box[2]<=1 or not 0<=box[1]<box[3]<=1:
+                        raise ValueError("无效补充身份裁图范围")
+                    im.crop(tuple(round(v*(im.width if i%2==0 else im.height)) for i,v in enumerate(box))).save(target/(str(person["id"])+"-ref-"+str(index)+".png"))
     (private/"catalog.json").write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding="utf-8")
     return {"photo_count":len(catalog),"rooms":{room:sum(item["room"]==room for item in catalog) for room in roster},"method":"reference-library; no model training"}
 

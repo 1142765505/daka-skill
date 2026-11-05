@@ -1,9 +1,11 @@
-/401照片/
-/403照片/
-/references/private/
 /output/
 /settings.local.json
 *.zip
 __pycache__/
 *.pyc
 /references/roster.json
+
+# Derived previews/crops can be rebuilt from the published originals.
+/references/private/*-sheet-*.jpg
+/references/private/*-identity-atlas.jpg
+/references/private/identities/

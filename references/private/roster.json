@@ -1,0 +1,328 @@
+{
+  "401": {
+    "max_id": 10,
+    "people": [
+      {
+        "id": 1,
+        "identity_source": "401照片/3.png",
+        "identity_box": [
+          0.083,
+          0.315,
+          0.2,
+          0.51
+        ],
+        "scene_references": [
+          "401照片/3.png",
+          "401照片/17.png",
+          "401照片/1.png",
+          "401照片/10.png"
+        ],
+        "notes": "靠近拍摄端、走道近侧；黑框眼镜、短发。 身份修订：3.png左侧脸为主、17.png交叉核对；黑色矩形眼镜、额前短发及鼻唇下颌轮廓按原图，不套用3/4号脸，不以衣服识别人。",
+        "name": "羊沐阳",
+        "visibility_policy": "reference_supported_view",
+        "identity_references": [
+          {
+            "source": "401照片/17.png",
+            "box": [
+              0.12,
+              0.362,
+              0.223,
+              0.541
+            ],
+            "view": "左侧脸、眼镜和额前短发"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "identity_source": "401照片/6.png",
+        "identity_box": [
+          0.108,
+          0.27,
+          0.185,
+          0.45
+        ],
+        "scene_references": [
+          "401照片/6.png"
+        ],
+        "notes": "靠窗左侧工位；浅蓝衬衫。只有较远背侧面，不能臆造清晰正脸。",
+        "name": "李涛",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 3,
+        "identity_source": "401照片/7.png",
+        "identity_box": [
+          0.37,
+          0.4,
+          0.53,
+          0.68
+        ],
+        "scene_references": [
+          "401照片/5.png",
+          "401照片/6.png",
+          "401照片/7.png",
+          "401照片/8.png",
+          "401照片/9.png"
+        ],
+        "notes": "棕色翻领上衣、短发、细框眼镜；位于4号前一格，双屏键鼠旁，纸箱属于邻桌。",
+        "name": "耿芳东",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 4,
+        "identity_source": "401照片/4.png",
+        "identity_box": [
+          0.265,
+          0.238,
+          0.335,
+          0.365
+        ],
+        "scene_references": [
+          "401照片/3.png",
+          "401照片/4.png",
+          "401照片/5.png",
+          "401照片/6.png",
+          "401照片/7.png"
+        ],
+        "notes": "3号后方相邻工位；短发眼镜，浅色短袖。 身份修订：4.png右侧脸为主，7.png仅补充背侧头型；短黑发、细框眼镜及侧脸比例，不套用前邻3号脸或耳机，不补造正脸。",
+        "name": "世文富",
+        "visibility_policy": "reference_supported_view",
+        "identity_references": [
+          {
+            "source": "401照片/7.png",
+            "box": [
+              0.09,
+              0.27,
+              0.225,
+              0.477
+            ],
+            "view": "背侧头型、短发及眼镜腿，非正脸"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "identity_source": "401照片/3.png",
+        "identity_box": [
+          0.213,
+          0.232,
+          0.268,
+          0.33
+        ],
+        "scene_references": [
+          "401照片/2.png",
+          "401照片/3.png",
+          "401照片/9.png"
+        ],
+        "notes": "4号更靠窗一格；灰色上衣、低头短发，现有脸部参考较小。",
+        "name": "芦强",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 6,
+        "identity_source": "401照片/14.png",
+        "identity_box": [
+          0.903,
+          0.365,
+          0.999,
+          0.487
+        ],
+        "scene_references": [
+          "401照片/13.png",
+          "401照片/14.png",
+          "401照片/15.png",
+          "401照片/17.png",
+          "401照片/18.png",
+          "401照片/19.png",
+          "401照片/20.png"
+        ],
+        "notes": "远侧一排最靠拍摄端，HKC/LeCoo显示器背后；眼镜、侧分短发，仅头顶/上半脸清楚。",
+        "name": "陈子悦",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 7,
+        "identity_source": "401照片/14.png",
+        "identity_box": [
+          0.577,
+          0.322,
+          0.638,
+          0.437
+        ],
+        "scene_references": [
+          "401照片/1.png",
+          "401照片/3.png",
+          "401照片/14.png",
+          "401照片/17.png"
+        ],
+        "notes": "远侧一排6号之后一格；眼镜、短发，多数身体被隔断挡住。 用户允许只露头发或额头以上；保持真实工位和发型，不移屏或抬高椅子强露全脸，不能仅凭头发声称面部身份已验证。",
+        "name": "张志扬",
+        "visibility_policy": "hair_or_forehead_allowed"
+      },
+      {
+        "id": 8,
+        "identity_source": "401照片/7.png",
+        "identity_box": [
+          0.756,
+          0.2,
+          0.835,
+          0.331
+        ],
+        "scene_references": [
+          "401照片/1.png",
+          "401照片/5.png",
+          "401照片/7.png",
+          "401照片/8.png",
+          "401照片/14.png"
+        ],
+        "notes": "远侧一排7号之后；黑色中分短发，通常只见头肩。 用户允许只露头发或额头以上；保持真实工位和发型，不移屏或抬高椅子强露全脸，不能仅凭头发声称面部身份已验证。",
+        "name": "吕明辰",
+        "visibility_policy": "hair_or_forehead_allowed"
+      },
+      {
+        "id": 9,
+        "identity_source": "401照片/15.png",
+        "identity_box": [
+          0.386,
+          0.311,
+          0.421,
+          0.365
+        ],
+        "scene_references": [
+          "401照片/1.png",
+          "401照片/3.png",
+          "401照片/15.png",
+          "401照片/16.png",
+          "401照片/17.png",
+          "401照片/20.png"
+        ],
+        "notes": "岳松涛：远侧一排8号更靠窗、10号右邻。身份参考改为15.png红圈9为主，17/20交叉核对。可见黑色短发、略蓬松碎发与额前发束；不照搬8号明显中分或10号的脸。面部清晰度有限，不把未能确认的眼镜细节作为硬特征。优先按原显示器/隔板高度仅露头发或额头以上，不抬椅、不移屏、不放大头顶，不额外补出眼鼻口或正脸；头顶应落在9号真实工位，与8/10分别可数，面部身份仍未验证。",
+        "name": "岳松涛",
+        "visibility_policy": "hair_or_forehead_allowed",
+        "identity_references": [
+          {
+            "source": "401照片/17.png",
+            "box": [
+              0.338,
+              0.231,
+              0.376,
+              0.28
+            ],
+            "view": "同工位的发型与额头上缘"
+          },
+          {
+            "source": "401照片/20.png",
+            "box": [
+              0.317,
+              0.292,
+              0.351,
+              0.339
+            ],
+            "view": "正向低头时的额前碎发与遮挡高度"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "identity_source": "401照片/7.png",
+        "identity_box": [
+          0.23,
+          0.145,
+          0.291,
+          0.225
+        ],
+        "scene_references": [
+          "401照片/1.png",
+          "401照片/6.png",
+          "401照片/7.png",
+          "401照片/17.png"
+        ],
+        "notes": "远侧靠窗端、熊猫摆件附近；黑发眼镜，多被显示器遮挡。 用户允许只露头发或额头以上；保持真实工位和发型，不移屏或抬高椅子强露全脸，不能仅凭头发声称面部身份已验证。",
+        "name": "董林锐",
+        "visibility_policy": "hair_or_forehead_allowed"
+      }
+    ]
+  },
+  "403": {
+    "max_id": 4,
+    "people": [
+      {
+        "id": 1,
+        "identity_source": "403照片/15.png",
+        "identity_box": [
+          0.165,
+          0.406,
+          0.245,
+          0.601
+        ],
+        "scene_references": [
+          "403照片/2.png",
+          "403照片/3.png",
+          "403照片/8.png",
+          "403照片/9.png",
+          "403照片/13.png",
+          "403照片/15.png",
+          "403照片/28.png"
+        ],
+        "notes": "走道左侧靠窗工位；眼镜，长发可披发/扎发，米色上衣或浅色马甲。",
+        "name": "徐潇",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 2,
+        "identity_source": "403照片/15.png",
+        "identity_box": [
+          0.717,
+          0.421,
+          0.792,
+          0.58
+        ],
+        "scene_references": [
+          "403照片/14.png",
+          "403照片/15.png",
+          "403照片/17.png",
+          "403照片/23.png",
+          "403照片/24.png",
+          "403照片/25.png",
+          "403照片/32.png"
+        ],
+        "notes": "走道右侧中部工位；眼镜扎发，灰蓝格纹衣，椅背常搭衣物。",
+        "name": "张榆晗",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 3,
+        "identity_source": "403照片/26.png",
+        "identity_box": [
+          0.46,
+          0.358,
+          0.53,
+          0.51
+        ],
+        "scene_references": [
+          "403照片/26.png"
+        ],
+        "notes": "右侧更深处独立工位；长直黑发，深色拼浅色袖外套。只有一张侧背面，不能用2号代替。",
+        "name": "项梓怡",
+        "visibility_policy": "reference_supported_view"
+      },
+      {
+        "id": 4,
+        "identity_source": "403照片/34.png",
+        "identity_box": [
+          0.393,
+          0.418,
+          0.535,
+          0.68
+        ],
+        "scene_references": [
+          "403照片/34.png"
+        ],
+        "notes": "34号照片红圈4号：短黑发、黑色耳罩式耳机、黑白格纹上衣，坐在1号相邻工位（该参考视角下位于1号左前侧），朝向并排双显示器。仅有后脑和背侧面参考，不能臆造清晰正脸或用1–3号的脸替代。原椅背搭深色外套。",
+        "name": "崔旺",
+        "visibility_policy": "reference_supported_view"
+      }
+    ]
+  }
+}

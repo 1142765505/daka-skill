@@ -55,7 +55,7 @@ def plan(command, has_input=False, present=None, uncertain=None):
             "final_numbered_people": sorted(set(p or []) | set(requested)) if has_input and state == "ready" else (p if state == "noop" else requested if not has_input else None),
             "preserve_unrequested_existing_people": has_input,
             "forbid_other_people": not has_input,
-            "candidate_count": 3 if state == "ready" else 0,
+            "candidate_count": 1 if state == "ready" else 0,
             "provenance": "AI合成图；参考库不是已训练模型"}
 
 
